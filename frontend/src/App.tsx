@@ -13,7 +13,8 @@ const keycloak = new Keycloak(keycloakConfig);
 
 const App: React.FC = () => {
   const initOptions = {
-    pkceMethod: 'S256'
+    pkceMethod: 'S256',
+    checkLoginIframe: false
   };
 
   return (
